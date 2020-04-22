@@ -13,6 +13,7 @@ namespace Ejercicio.menu_arganda
         }
         public static void main()
         {
+            mostrar_datos__tamaño tamaño = new mostrar_datos__tamaño();
             tipoarchivo[] achivo = new tipoarchivo[100];
             int menu;
             do
@@ -22,16 +23,16 @@ namespace Ejercicio.menu_arganda
                 switch (menu)
                 {
                     case 1:
-                        goto añadirArchivo;
+                       goto añadirArchivo;
                         break;
                     case 2:
-                        goto mostrarArchivo;
+                        goto MostrarArchivo;
                         break;
                     case 3:
-                        goto buscarTamaño;
+                       goto mostrartamaño;
                         break;
                     case 4:
-                        goto buscarNombre;
+                      goto mostrarnombre;
                         break;
                     case 5:
                         goto salir;

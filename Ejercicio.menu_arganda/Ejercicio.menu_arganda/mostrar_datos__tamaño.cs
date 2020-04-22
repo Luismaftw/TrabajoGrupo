@@ -8,12 +8,12 @@ namespace Ejercicio.menu_arganda
     {
         public static void main()
         {
-        buscarTamaño:
+            mostrartamaño:
             Console.WriteLine("introduce un tamaño para buscar");
             int tamaño = Convert.ToInt32(Console.ReadLine());
-            for (int i=0;i<100;i++)
+            for (int i = 0; i < 100; i++)
             {
-                if (tamaño==archivo[i].tamaño)
+                if (tamaño == archivo[i].tamaño)
                 {
                     Console.WriteLine("este archivo coincide en tamaño");
                     Console.WriteLine("{0} , {1}", archivo[i].nombre, archivo[i].tamaño);
@@ -21,5 +21,6 @@ namespace Ejercicio.menu_arganda
             }
             Console.ReadLine();
         }
+       
     }
 }
